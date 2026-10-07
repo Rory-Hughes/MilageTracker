@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    FileProvider path configuration for MileageTracker.
+
+    Grants external apps (share sheet, email clients, Google Drive, etc.)
+    read access to files inside the app's cache-based directories
+    via content:// URIs produced by FileProvider.getUriForFile().
+
+    Authority: "${applicationId}.provider"
+    Registered in AndroidManifest.xml inside the <application> block.
+
+    Sub-path mappings:
+
+      <cache-path name="exports" path="exports/" />
+        Maps content://<authority>/exports/<filename>
+        to  <cacheDir>/exports/<filename>
+        Used by ExportLogbookToPdfUseCase and ExportLogbookToCsvUseCase.
+
+      <cache-path name="camera_captures" path="camera_captures/" />
+        Maps content://<authority>/camera_captures/<filename>
+        to  <cacheDir>/camera_captures/<filename>
+        Used by AttachmentPickerSheet (TakePicture contract) in Task 7.2.
+        The captured JPEG is written here before being copied into
+        app-internal storage (filesDir/attachments/) by AttachmentRepositoryImpl.
+
+      <cache-path name="ocr_receipts" path="ocr_receipts/" />
+        Maps content://<authority>/ocr_receipts/<filename>
+        to  <cacheDir>/ocr_receipts/<filename>
+        Used by OcrReceiptViewModel.prepareImageUri() (Task 8.2).
+        Temp JPEGs are written here for the TakePicture camera contract
+        and read back by MlKitOcrService for on-device text recognition.
+        Files in this directory are ephemeral and may be cleared by the
+        system or by the app on next launch.
+
+      <external-files-path name="exports_external" path="exports/" />
+        Maps content://<authority>/exports_external/<filename>
+        to  <getExternalFilesDir()>/exports/<filename>
+        Reserved for future Downloads-folder saving support (Task 7.1).
+        No READ/WRITE_EXTERNAL_STORAGE permission needed on Android 10+
+        because getExternalFilesDir() is app-scoped.
+-->
+<paths>
+    <cache-path
+        name="exports"
+        path="exports/" />
+    <cache-path
+        name="camera_captures"
+        path="camera_captures/" />
+    <cache-path
+        name="ocr_receipts"
+        path="ocr_receipts/" />
+    <cache-path
+        name="odometer_temp"
+        path="odometer_temp/" />
+    <external-files-path
+        name="exports_external"
+        path="exports/" />
+</paths>

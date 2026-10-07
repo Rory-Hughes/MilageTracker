@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">MileageTracker</string>
+    <string name="app_tagline">Your CRA-ready vehicle logbook</string>
+
+    <!-- Navigation / shell -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_trips">Trips</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_vehicles">Vehicles</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">Welcome to MileageTracker</string>
+    <string name="onboarding_welcome_body">Track your business kilometres and generate a CRA-ready vehicle logbook in seconds.</string>
+    <string name="onboarding_step_vehicle_title">Add Your Vehicle</string>
+    <string name="onboarding_step_vehicle_body">Set up the motor vehicle you use for business, medical, or charitable trips.</string>
+    <string name="onboarding_step_tracking_title">Auto-Detect Trips</string>
+    <string name="onboarding_step_tracking_body">MileageTracker detects trips automatically. You can also log trips manually at any time.</string>
+    <string name="onboarding_step_logbook_title">Export Your Logbook</string>
+    <string name="onboarding_step_logbook_body">Generate a CRA-eligible PDF or CSV vehicle logbook for your tax year and share it directly with your accountant.</string>
+    <string name="onboarding_get_started">Get Started</string>
+    <string name="onboarding_skip">Skip</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Dashboard</string>
+    <string name="dashboard_this_month">This Month</string>
+    <string name="dashboard_this_year">This Tax Year</string>
+    <string name="dashboard_business_km">Business km</string>
+    <string name="dashboard_total_km">Total km</string>
+    <string name="dashboard_reimbursement_estimate">CRA Prescribed Allowance Estimate</string>
+    <string name="dashboard_rate_unavailable">Rate unavailable. Select provinces or territories in Settings.</string>
+    <string name="dashboard_no_trips">No trips logged yet.\nStart a trip or add one manually.</string>
+    <string name="dashboard_trip_start">Start Trip</string>
+    <string name="dashboard_trip_stop">Stop Trip</string>
+    <string name="dashboard_cra_logbook">CRA Logbook</string>
+    <string name="dashboard_recent_trips">Recent Trips</string>
+    <string name="dashboard_view_all">View All</string>
+
+    <!-- Trips / Trip list -->
+    <string name="trips_title">My Trips</string>
+    <string name="trips_empty">No trips recorded yet.\nOnce you complete a trip, it will appear here.</string>
+    <string name="trips_unclassified_banner">You have unclassified trips — tap to review.</string>
+    <string name="trip_category_business">Business</string>
+    <string name="trip_category_medical">Medical</string>
+    <string name="trip_category_charity">Charitable</string>
+    <string name="trip_category_personal">Personal</string>
+    <string name="trip_category_unclassified">Unclassified</string>
+    <string name="trip_category_commute">Commute</string>
+    <string name="trip_category_custom">Custom</string>
+
+    <!-- Trip Detail -->
+    <string name="trip_detail_title">Trip Details</string>
+    <string name="trip_detail_date">Date</string>
+    <string name="trip_detail_start">Start Location</string>
+    <string name="trip_detail_end">End Location</string>
+    <string name="trip_detail_distance">Distance (km)</string>
+    <string name="trip_detail_purpose">Business Purpose</string>
+    <string name="trip_detail_purpose_hint">e.g. Client visit, medical appointment</string>
+    <string name="trip_detail_category">Trip Category</string>
+    <string name="trip_detail_vehicle">Vehicle</string>
+    <string name="trip_detail_notes">Notes</string>
+    <string name="trip_detail_notes_hint">Optional notes for your CRA records</string>
+    <string name="trip_detail_edit_locations">Edit trip locations</string>
+    <string name="trip_detail_start_location">Start location</string>
+    <string name="trip_detail_end_location">End location</string>
+    <string name="trip_detail_cra_eligible">CRA-Eligible</string>
+    <string name="trip_detail_cra_not_eligible">Not CRA-Eligible</string>
+    <string name="trip_detail_reimbursement">Kilometric Reimbursement</string>
+    <string name="trip_detail_save">Save Trip</string>
+    <string name="trip_detail_delete">Delete Trip</string>
+    <string name="trip_detail_delete_confirm_title">Delete Trip?</string>
+    <string name="trip_detail_delete_confirm_body">This trip will be archived and removed from your active records. This cannot be undone.</string>
+    <string name="trip_detail_delete_confirm_yes">Delete</string>
+    <string name="trip_detail_delete_confirm_no">Cancel</string>
+    <string name="trip_detail_purpose_required_for_custom">Purpose (required for custom trips)</string>
+    <string name="trip_detail_repair">Repair trip</string>
+    <string name="trip_detail_view_edit_history">View edit history</string>
+    <string name="trip_detail_route_recorded">Route recorded</string>
+    <plurals name="trip_detail_gps_points_captured">
+        <item quantity="one">%d GPS point captured</item>
+        <item quantity="other">%d GPS points captured</item>
+    </plurals>
+
+    <!-- Manual Trip Entry -->
+    <string name="manual_trip_title">Log a Missed Trip</string>
+    <string name="manual_trip_repair_title">Repair Trip</string>
+    <string name="manual_trip_intro">Enter complete trip details for cleaner reports and easier CRA review.</string>
+    <string name="manual_trip_datetime_section">Date &amp; Time</string>
+    <string name="manual_trip_datetime_subtitle">Set both start and end timestamps for an audit-ready trip entry.</string>
+    <string name="manual_trip_locations_section">Locations</string>
+    <string name="manual_trip_locations_subtitle">Use specific start and end addresses when possible.</string>
+    <string name="manual_trip_date_label">Trip Date</string>
+    <string name="manual_trip_start_label">Start Location</string>
+    <string name="manual_trip_start_hint">Street address or place name</string>
+    <string name="manual_trip_end_label">End Location (Destination)</string>
+    <string name="manual_trip_end_hint">Street address or place name</string>
+    <string name="manual_trip_distance_label">Distance (km)</string>
+    <string name="manual_trip_distance_hint">e.g. 12.5</string>
+    <string name="manual_trip_purpose_label">Business Purpose</string>
+    <string name="manual_trip_purpose_hint">e.g. Client meeting, medical appointment, charitable delivery</string>
+    <string name="manual_trip_category_label">Trip Category</string>
+    <string name="manual_trip_vehicle_label">Vehicle</string>
+    <string name="manual_trip_notes_label">Notes (optional)</string>
+    <string name="manual_trip_notes_hint">e.g. client name, job number, CRA purpose</string>
+    <string name="manual_trip_save">Save to Logbook</string>
+    <string name="manual_trip_save_repair">Save Repair</string>
+    <string name="manual_trip_saved_toast">Trip saved to your vehicle logbook.</string>
+    <string name="manual_trip_repair_mode">Repair mode</string>
+    <string name="manual_trip_purpose_required_label">Purpose (required)</string>
+    <string name="manual_trip_distance_maps_calculated">Calculated from Google Maps route</string>
+    <string name="manual_trip_not_set">Not set</string>
+    <string name="manual_trip_timestamp_label">%s Timestamp</string>
+    <string name="manual_trip_select_date">Select date</string>
+    <string name="manual_trip_select_time">Select time</string>
+    <string name="manual_trip_select_time_title">Select %s time</string>
+    <string name="manual_trip_date_value">Date: %s</string>
+    <string name="manual_trip_time_value">Time: %s</string>
+    <string name="manual_trip_error_no_distance">Enter the trip distance in kilometres.</string>
+    <string name="manual_trip_error_no_vehicle">Select the vehicle used for this trip.</string>
+    <string name="manual_trip_error_no_purpose">Enter a business purpose for CRA records.</string>
+
+    <!-- Manual trip tracking control -->
+    <string name="tracking_control_title">Track a Trip</string>
+    <string name="tracking_control_start">Start Tracking</string>
+    <string name="tracking_control_stop">Stop &amp; Save Trip</string>
+    <string name="tracking_control_idle">Ready to start tracking your trip?</string>
+    <string name="tracking_control_paused">Trip Paused</string>
+    <string name="tracking_control_in_progress">Trip in progress…</string>
+    <string name="tracking_control_auto_in_progress">Auto-trip in progress…</string>
+    <string name="tracking_control_auto_locked">Controls are locked during auto-recording.</string>
+    <string name="tracking_control_elapsed">Elapsed time</string>
+    <string name="tracking_control_distance_so_far">Distance so far</string>
+    <string name="tracking_control_no_vehicle">Select a vehicle before starting a trip.</string>
+
+    <!-- Unclassified trips -->
+    <string name="unclassified_title">Classify Trips</string>
+    <string name="unclassified_empty">All trips have been classified. Great work!</string>
+    <string name="unclassified_empty_title">All caught up!</string>
+    <string name="unclassified_empty_body">No unclassified trips pending. Swipe new trips to classify them as Business or Personal.</string>
+    <string name="unclassified_error_title">Could not load drives</string>
+    <string name="unclassified_instruction">Select a category for each trip so it can be included in your CRA vehicle logbook.</string>
+    <string name="unclassified_classify_all">Classify All as Business</string>
+
+    <!-- Reports -->
+    <string name="reports_title">Reports</string>
+    <string name="reports_cra_logbook">CRA Vehicle Logbook</string>
+    <string name="reports_cra_logbook_subtitle">Export a CRA-ready PDF or CSV motor vehicle log</string>
+    <string name="reports_annual_summary">Annual Vehicle Summary</string>
+    <string name="reports_annual_summary_subtitle">Business use percentage and kilometric rate totals</string>
+    <string name="reports_history">Export History</string>
+    <string name="reports_history_subtitle">Previously generated logbooks and reports</string>
+    <string name="reports_simplified_logbook">Simplified Logbook</string>
+    <string name="reports_simplified_logbook_subtitle">Guidance on using the CRA simplified vehicle logbook method</string>
+    <string name="reports_empty">No reports generated yet.\nExport your first CRA vehicle logbook from the logbook screen.</string>
+    <string name="reports_empty_title">No summaries yet</string>
+    <string name="reports_empty_body">Try a different tax year or vehicle filter, or log some business trips first.</string>
+    <string name="reports_error_title">Could not load reports</string>
+    <string name="export_screen_title">Export Logbook</string>
+    <string name="export_screen_vehicle_scope_title">Vehicle Scope</string>
+    <string name="export_screen_categories_title">Categories</string>
+    <string name="export_screen_route_details_note">Exports include route details by default so the CRA log remains audit-ready.</string>
+
+    <!-- CRA Logbook screen -->
+    <string name="cra_logbook_title">CRA Logbook</string>
+    <string name="cra_logbook_filter_all_vehicles">All vehicles</string>
+    <string name="cra_logbook_filter_vehicle">Vehicle</string>
+    <string name="cra_logbook_filter_month">Month</string>
+    <string name="cra_logbook_filter_all_months">All months</string>
+    <string name="cra_logbook_filter_business">Business</string>
+    <string name="cra_logbook_filter_medical">Medical</string>
+    <string name="cra_logbook_filter_charity">Charitable</string>
+    <string name="cra_logbook_col_date">Date</string>
+    <string name="cra_logbook_col_destination">Destination</string>
+    <string name="cra_logbook_col_category">Category</string>
+    <string name="cra_logbook_col_km">km</string>
+    <string name="cra_logbook_col_vehicle">Vehicle</string>
+    <string name="cra_logbook_eligible_km">Eligible km</string>
+    <string name="cra_logbook_total_km">Total km</string>
+    <string name="cra_logbook_business_use">Business use</string>
+    <string name="cra_logbook_empty_title">No trips found</string>
+    <string name="cra_logbook_empty_body">Try a different tax year, vehicle, or category filter.</string>
+    <string name="cra_logbook_error_title">Could not load logbook</string>
+    <string name="cra_logbook_error_body">Pull down to retry, or check your connection.</string>
+    <string name="cra_logbook_export_pdf">Export PDF</string>
+    <string name="cra_logbook_export_csv">Export CSV</string>
+    <string name="cra_logbook_exporting">Exporting…</string>
+    <string name="cra_logbook_export_saved">%s saved to report history</string>
+    <string name="cra_logbook_view_history">View History</string>
+    <string name="cra_logbook_share_pdf_title">Share CRA Logbook PDF</string>
+    <string name="cra_logbook_share_csv_title">Share CRA Logbook CSV</string>
+    <string name="cra_logbook_generating_title">Generating %s…</string>
+    <string name="cra_logbook_export_action">Generate %s</string>
+    <string name="cra_logbook_col_origin">Origin</string>
+
+    <!-- Annual Vehicle Summary -->
+    <string name="annual_summary_title">Annual Vehicle Summary</string>
+    <string name="annual_summary_tax_year">Tax Year</string>
+    <string name="annual_summary_business_km">Business km</string>
+    <string name="annual_summary_personal_km">Personal km</string>
+    <string name="annual_summary_total_km">Total logged km</string>
+    <string name="annual_summary_business_pct">Business use %</string>
+    <string name="annual_summary_reimbursement">CRA Reimbursement</string>
+    <string name="annual_summary_opening_odometer">Opening odometer</string>
+    <string name="annual_summary_closing_odometer">Closing odometer</string>
+    <string name="annual_summary_odometer_total">Odometer total km</string>
+    <string name="annual_summary_cra_rate">Kilometric Rate</string>
+    <string name="annual_summary_no_data">No vehicle data for this tax year.\nLog some business trips to see your annual summary.</string>
+
+    <!-- Report History -->
+    <string name="report_history_title">Export History</string>
+    <string name="report_history_empty">No logbooks exported yet.\nExport a CRA-ready PDF or CSV from the logbook screen.</string>
+    <string name="report_history_empty_title">No exports yet</string>
+    <string name="report_history_empty_body">Exports you generate from the CRA Logbook screen will appear here.\n\nCRA requires motor vehicle records to be retained for at least 6 years from the end of the tax year — this screen is your audit trail.</string>
+    <string name="report_history_delete_confirm_title">Delete Export?</string>
+    <string name="report_history_delete_confirm_body">This will remove the export record. The file may still exist on your device.</string>
+    <string name="report_history_reshare">Re-share</string>
+    <string name="report_history_delete">Delete Record</string>
+
+    <!-- Report Readiness (Task 7.3) -->
+    <plurals name="report_readiness_incomplete_title">
+        <item quantity="one">%d trip needs attention</item>
+        <item quantity="other">%d trips need attention</item>
+    </plurals>
+    <string name="report_readiness_incomplete_body">Some trips are missing fields required for a complete CRA submission. Tap "Review Trips" to fix them before filing.</string>
+    <plurals name="report_readiness_progress_label">
+        <item quantity="one">%1$d of %2$d trip ready</item>
+        <item quantity="other">%1$d of %2$d trips ready</item>
+    </plurals>
+    <string name="report_readiness_review_button">Review Trips</string>
+
+    <!-- Exceptions List Screen (Task 7.3) -->
+    <string name="exceptions_list_title">Incomplete Trips</string>
+    <plurals name="exceptions_list_subtitle">
+        <item quantity="one">%d trip is missing required CRA fields. Tap the row to fix it.</item>
+        <item quantity="other">%d trips are missing required CRA fields. Tap a row to fix one.</item>
+    </plurals>
+    <string name="exceptions_list_empty_title">All trips are ready</string>
+    <string name="exceptions_list_empty_body">Every trip in this period has the required CRA fields filled in. You\'re ready to export.</string>
+    <string name="exceptions_row_trip_id">Trip #%d</string>
+    <string name="exceptions_row_score">%d%% ready</string>
+
+    <!-- Missing field chip labels (Task 7.3) -->
+    <string name="missing_field_purpose">No purpose</string>
+    <string name="missing_field_vehicle">No vehicle</string>
+    <string name="missing_field_category">Not classified</string>
+    <string name="missing_field_distance">No distance</string>
+    <string name="missing_field_attachment">No receipt</string>
+
+    <!-- Simplified Logbook Guidance -->
+    <string name="simplified_logbook_title">Simplified Logbook Method</string>
+    <string name="simplified_logbook_intro">The CRA allows you to use a full logbook from a previous year to estimate business use, provided you keep a sample logbook for a three-month period every five years.</string>
+    <string name="simplified_logbook_eligible_label">Eligible for Simplified Method</string>
+    <string name="simplified_logbook_not_eligible_label">Not Yet Eligible</string>
+    <string name="simplified_logbook_requirement_full_year">A complete 12-month base logbook must exist.</string>
+    <string name="simplified_logbook_requirement_sample">A three-month sample logbook is required every five years.</string>
+    <string name="simplified_logbook_cra_reference">See CRA Guide T4002 and IT-521R for full details on the simplified logbook method.</string>
+
+    <!-- Vehicles -->
+    <string name="vehicles_title">My Vehicles</string>
+    <string name="vehicles_empty">No vehicles added yet.\nAdd a motor vehicle to start tracking business kilometres.</string>
+    <string name="vehicles_empty_title">No vehicles yet</string>
+    <string name="vehicles_empty_body">Add your motor vehicle to start tracking business kilometres and generate a CRA vehicle logbook.</string>
+    <string name="vehicle_add">Add Vehicle</string>
+    <string name="vehicle_edit">Edit Vehicle</string>
+    <string name="vehicle_deactivate">Deactivate</string>
+    <string name="vehicle_reactivate">Reactivate</string>
+    <string name="vehicle_delete_confirm_title">Remove Vehicle?</string>
+    <string name="vehicle_delete_confirm_body">All trip records for this vehicle will be retained in your logbook, but the vehicle will no longer appear in filters or new trips.</string>
+    <string name="vehicle_deactivate_confirm_title">Deactivate Vehicle?</string>
+    <string name="vehicle_deactivate_confirm_body">Deactivating %1$s will hide it from active lists. Previous trip history is preserved.</string>
+    <string name="vehicle_delete_permanent_confirm_body">Are you sure you want to permanently delete %1$s? This action cannot be undone.</string>
+    <string name="vehicle_form_display_name_label">Vehicle Name</string>
+    <string name="vehicle_form_display_name_hint">e.g. My 2021 Honda Civic</string>
+    <string name="vehicle_form_ownership_type_label">Ownership Type</string>
+    <string name="vehicle_form_make_label">Make</string>
+    <string name="vehicle_form_model_label">Model</string>
+    <string name="vehicle_form_year_label">Year</string>
+    <string name="vehicle_form_plate_label">Licence Plate</string>
+    <string name="vehicle_form_save">Save Vehicle</string>
+    <string name="vehicle_form_opening_odometer_hint">Opening odometer reading (Jan 1)</string>
+    <string name="vehicle_form_error_no_name">Enter a name for this vehicle.</string>
+    <string name="vehicle_status_active">Active</string>
+    <string name="vehicle_status_inactive">Inactive</string>
+    <string name="vehicle_status_default">Default</string>
+    <string name="vehicle_record_odometer">Record Odometer</string>
+    <string name="vehicle_set_default">Set as Default</string>
+    <string name="vehicle_saved_snackbar">Vehicle saved successfully</string>
+    <string name="vehicle_default_set_snackbar">Default vehicle updated</string>
+    <string name="vehicle_deactivated_snackbar">Vehicle deactivated</string>
+    <string name="vehicle_reactivated_snackbar">Vehicle reactivated</string>
+    <string name="vehicle_deleted_snackbar">Vehicle deleted permanently</string>
+
+    <!-- Odometer capture -->
+    <string name="odometer_title">Odometer Reading</string>
+    <string name="odometer_opening_label">Opening odometer (km) — January 1</string>
+    <string name="odometer_closing_label">Closing odometer (km) — December 31</string>
+    <string name="odometer_hint">e.g. 45000</string>
+    <string name="odometer_save">Save Reading</string>
+    <string name="odometer_cra_note">The CRA requires opening and closing odometer readings for each tax year to calculate your business-use percentage.</string>
+    <string name="odometer_error_invalid">Enter a valid kilometre reading.</string>
+    <string name="odometer_error_close_before_open">Closing reading must be greater than opening reading.</string>
+
+    <!-- Tracking Diagnostics -->
+    <string name="diagnostics_title">Tracking Diagnostics</string>
+    <string name="diagnostics_location_permission">Location permission</string>
+    <string name="diagnostics_location_granted">Granted — trip tracking is active.</string>
+    <string name="diagnostics_location_denied">Denied — MileageTracker cannot detect trips automatically.</string>
+    <string name="diagnostics_battery_optimisation">Battery optimisation</string>
+    <string name="diagnostics_battery_unrestricted">Unrestricted — recommended for reliable trip detection.</string>
+    <string name="diagnostics_battery_restricted">Restricted — trips may be missed in the background.</string>
+    <string name="diagnostics_battery_warning_subtitle">Battery optimization may interrupt background trip tracking. Tap Fix to exempt this app, or Dismiss to hide this warning.</string>
+    <string name="diagnostics_last_trip_detected">Last trip detected</string>
+    <string name="diagnostics_no_trip_detected">No trip detected yet.</string>
+    <string name="diagnostics_open_settings">Fix</string>
+    <string name="diagnostics_cra_note">Accurate trip detection ensures your vehicle logbook is complete and CRA-ready. Missing trips may affect your business-use calculation.</string>
+
+    <!-- Settings screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_language">App Language</string>
+    <string name="settings_language_change_hint">Language changes take effect immediately.</string>
+    <string name="settings_section_vehicle">Vehicle Defaults</string>
+    <string name="settings_vehicle_none">None</string>
+    <string name="settings_vehicle_empty">No active vehicles — add one in My Vehicles.</string>
+    <string name="settings_vehicle_label">Default vehicle</string>
+    <string name="settings_section_rate">Kilometric Rate</string>
+    <string name="settings_rate_label">Rate mode</string>
+    <string name="settings_rate_cra">CRA Standard (two-tier)</string>
+    <string name="settings_rate_custom">Custom flat rate</string>
+    <string name="settings_rate_cra_description">Using CRA prescribed kilometric rates (first 5,000 km at the higher tier).</string>
+    <string name="settings_rate_region_label">CRA allowance region</string>
+    <string name="settings_rate_region_required">Select provinces or territories</string>
+    <string name="settings_rate_region_provinces">Provinces</string>
+    <string name="settings_rate_region_territories">Territories (+$0.04/km)</string>
+    <string name="settings_rate_cra_disclaimer">Estimate only. This is not tax advice.</string>
+    <string name="settings_rate_custom_label">Rate ($/km)</string>
+    <string name="settings_rate_custom_placeholder">e.g. 0.70</string>
+    <string name="settings_rate_apply">Apply</string>
+    <string name="settings_section_notifications">Notification Preferences</string>
+    <string name="settings_notif_trip_label">Trip-start reminder</string>
+    <string name="settings_notif_trip_subtitle">Notify when a new trip is detected</string>
+    <string name="settings_notif_weekly_label">Weekly summary</string>
+    <string name="settings_notif_weekly_subtitle">Receive a weekly business kilometres digest</string>
+    <string name="settings_notif_odometer_label">Odometer photo reminders</string>
+    <string name="settings_notif_odometer_subtitle">Remind me in January when active vehicles need opening odometer evidence</string>
+    <string name="settings_section_tracking">Tracking Preferences</string>
+    <string name="settings_tracking_background_label">Background trip detection</string>
+    <string name="settings_tracking_background_subtitle">Optional. Manual tracking remains available if you keep this off.</string>
+    <string name="settings_tracking_background_status_on">Background detection is enabled and registered.</string>
+    <string name="settings_tracking_background_status_pending">Grant all required permissions to enable background detection.</string>
+    <string name="settings_tracking_background_status_off">Background detection is currently off.</string>
+    <string name="settings_tracking_permission_required">Location and activity-recognition permissions are required. After granting them, this toggle will enable automatically.</string>
+    <string name="settings_sensitivity_label">Auto-detect sensitivity</string>
+    <string name="settings_sensitivity_low">Low (fewer detections)</string>
+    <string name="settings_sensitivity_high">High (more detections)</string>
+    <string name="settings_section_privacy">Privacy and Cloud Backup</string>
+    <string name="settings_cloud_upload_label">Cloud backup</string>
+    <string name="settings_cloud_upload_subtitle">Upload your mileage records and evidence to your private account so they can be restored on another device. You can revoke this consent at any time.</string>
+    <string name="settings_calendar_permission_title">Calendar access</string>
+    <string name="settings_calendar_permission_rationale">MileageTracker only uses calendar access for the optional Calendar Hints feature. It checks nearby events to suggest a trip purpose while leaving the rest of your workflow unchanged.</string>
+    <string name="settings_calendar_permission_required">Calendar access is required before MileageTracker can suggest trip purposes from your events.</string>
+    <string name="settings_calendar_permission_denied">Calendar access is blocked. Open system settings if you want event-based purpose hints.</string>
+    <string name="settings_rate_validation_title">CRA rate catalog status</string>
+    <string name="settings_rate_validation_loading">Checking seeded CRA rates...</string>
+    <string name="settings_rate_validation_catalog">Catalog coverage: %1$d-%2$d</string>
+    <string name="settings_rate_validation_seeded">Seeded years: %1$s</string>
+    <string name="settings_rate_validation_missing">Missing seeded years: %1$s</string>
+    <string name="settings_rate_validation_current_ready">Current year %1$d is seeded and ready.</string>
+    <string name="settings_rate_validation_current_missing">Current year %1$d still needs CRA rate validation.</string>
+    <string name="settings_rate_validation_source">Open CRA source</string>
+    <string name="settings_section_classification">Auto-Classification</string>
+    <string name="settings_classification_title">Classification Rules</string>
+    <string name="settings_classification_subtitle">Enable, disable, and manage auto-classification rules for your trips</string>
+    <string name="privacy_dashboard_title">Privacy Dashboard</string>
+    <string name="privacy_dashboard_subtitle">Review local data, sync status, and sign-out safety</string>
+    <string name="privacy_dashboard_local_title">Local data on this device</string>
+    <string name="privacy_dashboard_sync_title">Sync status</string>
+    <string name="privacy_dashboard_sign_out_title">Sign-out readiness</string>
+    <string name="privacy_dashboard_footer">Exports remain available from Reports, and Delete Account removes the cloud copy plus the local cache on this device.</string>
+
+    <!-- Language picker -->
+    <string name="language_system_default">System Default</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+
+    <!-- Validation messages -->
+    <string name="validation_rate_empty">Enter a kilometric rate</string>
+    <string name="validation_rate_not_number">Must be a number (e.g. 0.70)</string>
+    <string name="validation_rate_zero">Kilometric rate must be greater than 0</string>
+    <string name="validation_rate_too_high">Rate seems too high — enter $/km (e.g. 0.70)</string>
+    <string name="validation_postal_code_invalid">Enter a valid Canadian postal code (e.g. A1A 1A1)</string>
+    <string name="validation_province_invalid">Select a valid Canadian province or territory</string>
+    <string name="validation_distance_negative">Distance must be a positive number of kilometres</string>
+    <string name="validation_odometer_invalid">Enter a valid odometer reading in kilometres</string>
+
+    <!-- Common / shared actions -->
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_share">Share</string>
+    <string name="action_export">Export</string>
+    <string name="action_close">Close</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_back">Back</string>
+    <string name="action_next">Next</string>
+    <string name="action_done">Done</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="action_ok">OK</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_open_menu">Open menu</string>
+    <string name="action_more_options">More options</string>
+    <string name="action_add_trip">Add Trip</string>
+    <string name="action_add_vehicle">Add Vehicle</string>
+
+    <!-- Generic error states -->
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_no_vehicle">No vehicle selected. Add a vehicle in My Vehicles first.</string>
+    <string name="error_export_failed">Unable to generate logbook. Please try again.</string>
+    <string name="error_loading">Unable to load data. Check your connection and try again.</string>
+
+    <!-- Classification rules screen -->
+    <string name="classification_rules_title">Classification Rules</string>
+    <string name="classification_rules_empty">No rules set up yet.\nAdd a rule to automatically classify trips as Business, Medical, or Charitable.</string>
+    <string name="classification_rule_add">Add Rule</string>
+    <string name="classification_rule_edit">Edit Rule</string>
+    <string name="classification_rule_delete_confirm_title">Delete Rule?</string>
+    <string name="classification_rule_delete_confirm_body">This rule will no longer classify matching trips automatically.</string>
+    <string name="classification_rule_run_all">Re-classify All Trips</string>
+    <plurals name="classification_rule_run_success">
+        <item quantity="one">%d trip classified.</item>
+        <item quantity="other">%d trips classified.</item>
+    </plurals>
+
+    <!-- Phase 4 — Full-Screen Map (TripMapScreen) -->
+    <string name="map_screen_title_fallback">Route Map</string>
+    <string name="map_no_gps_data">No GPS route available</string>
+    <string name="map_no_gps_data_hint">This trip was logged manually and has no recorded GPS track.</string>
+    <string name="map_unavailable">Google Maps is not available on this device.</string>
+    <string name="map_marker_start">Start</string>
+    <string name="map_marker_end">End</string>
+    <string name="cd_navigate_back">Navigate back</string>
+    <string name="map_view_full">View full map</string>
+    <string name="map_card_title">Route map</string>
+
+    <string name="map_low_accuracy_warning">⚠ GPS accuracy low on parts of this route</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    String resources added for Task 7.5 — Audit and Exception Visibility.
+    Merge these entries into the main res/values/strings.xml before the
+    next release build; kept separate here for clean review diff.
+-->
+<resources>
+
+    <!-- TripAuditScreen -->
+    <string name="audit_screen_title">Edit History — Trip #%1$d</string>
+    <string name="audit_screen_title_generic">Edit History</string>
+    <plurals name="audit_timeline_subtitle">
+        <item quantity="one">%d event recorded</item>
+        <item quantity="other">%d events recorded</item>
+    </plurals>
+    <string name="audit_empty_title">No edits recorded</string>
+    <string name="audit_empty_body">This trip has not been modified since it was created.</string>
+    <string name="audit_actor_system">System (automated)</string>
+    <string name="audit_actor_user">User: %1$s</string>
+    <string name="audit_field_label">Field: %1$s</string>
+    <string name="audit_diff_old">%1$s</string>
+    <string name="audit_diff_new">%1$s</string>
+
+    <!-- ExceptionsListScreen (Task 7.5 additions) -->
+    <plurals name="exceptions_flagged_subtitle">
+        <item quantity="one">%d flagged trip</item>
+        <item quantity="other">%d flagged trips</item>
+    </plurals>
+
+</resources>

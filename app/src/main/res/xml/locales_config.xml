@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Per-app locale support manifest.
+
+    Declares the locales this app explicitly supports so that:
+      1. Android 13+ (API 33) per-app language settings surface the
+         correct language list in system Settings > Language.
+      2. AppCompatDelegate.setApplicationLocales() resolves correctly
+         when called from SetLanguagePreferenceUseCase (Task 6.1).
+
+    Keep this list in sync with the values/ folders that have a full
+    strings.xml translation:
+      - values/          (en — default)
+      - values-fr/       (French; used for fr-CA via resource fallback)
+-->
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="en" />
+    <locale android:name="fr-CA" />
+</locale-config>
+

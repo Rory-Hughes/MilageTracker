@@ -1,0 +1,16 @@
+package com.example.mileagetracker.service
+
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+
+/**
+ * Repairs automatic-detection registration after a device restart.
+ */
+class BootCompletedReceiver : BroadcastReceiver() {
+    override fun onReceive(context: Context, intent: Intent) {
+        if (intent.action == Intent.ACTION_BOOT_COMPLETED) {
+            ActivityTransitionRegistrar(context).registerIfEligible()
+        }
+    }
+}

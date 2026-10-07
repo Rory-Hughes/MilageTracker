@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    French (fr / fr-CA) string resources for MileageTracker.
+
+    Translation guidelines:
+    - Use "l'ARC" (Agence du revenu du Canada) wherever "CRA" appears in EN.
+    - Use "kilométrage d'affaires" for "business km".
+    - Use "registre de véhicule" for "vehicle logbook".
+    - Use "taux kilométrique" for "kilometric rate".
+    - Use "aux fins de l'ARC" for "CRA-eligible" / "CRA-ready".
+    - Use "déplacement" (trip) or "trajet" contextually.
+    - Prefer formal register ("vous" not "tu") throughout.
+-->
+<resources>
+    <!-- ─────────────────────────────────────────────────────────────────
+         App
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="app_name">SuiviKilométrique</string>
+    <string name="app_tagline">Votre registre de véhicule aux fins de l\'ARC</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Navigation / shell
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="nav_dashboard">Tableau de bord</string>
+    <string name="nav_trips">Déplacements</string>
+    <string name="nav_reports">Rapports</string>
+    <string name="nav_vehicles">Véhicules</string>
+    <string name="nav_settings">Paramètres</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Onboarding
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="onboarding_welcome_title">Bienvenue dans MileageTracker</string>
+    <string name="onboarding_welcome_body">Suivez vos kilomètres d\'affaires et générez un registre de véhicule aux fins de l\'ARC en quelques secondes.</string>
+    <string name="onboarding_step_vehicle_title">Ajoutez votre véhicule</string>
+    <string name="onboarding_step_vehicle_body">Configurez le véhicule à moteur que vous utilisez pour vos déplacements d\'affaires, médicaux ou de bienfaisance.</string>
+    <string name="onboarding_step_tracking_title">Détection automatique</string>
+    <string name="onboarding_step_tracking_body">MileageTracker détecte vos trajets automatiquement. Vous pouvez aussi saisir des trajets manuellement à tout moment.</string>
+    <string name="onboarding_step_logbook_title">Exportez votre registre</string>
+    <string name="onboarding_step_logbook_body">Générez un registre de véhicule PDF ou CSV admissible à l\'ARC pour votre année d\'imposition et partagez-le directement avec votre comptable.</string>
+    <string name="onboarding_get_started">Commencer</string>
+    <string name="onboarding_skip">Passer</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Dashboard
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="dashboard_title">Tableau de bord</string>
+    <string name="dashboard_this_month">Ce mois-ci</string>
+    <string name="dashboard_this_year">Cette année d\'imposition</string>
+    <string name="dashboard_business_km">km d\'affaires</string>
+    <string name="dashboard_total_km">km totaux</string>
+    <string name="dashboard_reimbursement_estimate">Estimation de l\'allocation prescrite par l\'ARC</string>
+    <string name="dashboard_rate_unavailable">Taux non disponible. Sélectionnez provinces ou territoires dans les paramètres.</string>
+    <string name="dashboard_no_trips">Aucun trajet enregistré.
+Commencez un trajet ou ajoutez-en un manuellement.</string>
+    <string name="dashboard_trip_start">Démarrer un trajet</string>
+    <string name="dashboard_trip_stop">Arrêter le trajet</string>
+    <string name="dashboard_cra_logbook">Registre ARC</string>
+    <string name="dashboard_recent_trips">Trajets récents</string>
+    <string name="dashboard_view_all">Voir tout</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Trips / Trip list
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="trips_title">Mes déplacements</string>
+    <string name="trips_empty">Aucun trajet enregistré.
+Vos trajets apparaîtront ici une fois complétés.</string>
+    <string name="trips_unclassified_banner">Vous avez des trajets non classifiés — appuyez pour les examiner.</string>
+    <string name="trip_category_business">Affaires</string>
+    <string name="trip_category_medical">Médical</string>
+    <string name="trip_category_charity">Bienfaisance</string>
+    <string name="trip_category_personal">Personnel</string>
+    <string name="trip_category_unclassified">Non classifié</string>
+    <string name="trip_category_commute">Déplacement domicile-travail</string>
+    <string name="trip_category_custom">Personnalisé</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Trip Detail
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="trip_detail_title">Détails du trajet</string>
+    <string name="trip_detail_date">Date</string>
+    <string name="trip_detail_start">Lieu de départ</string>
+    <string name="trip_detail_end">Lieu d\'arrivée</string>
+    <string name="trip_detail_distance">Distance (km)</string>
+    <string name="trip_detail_purpose">Raison professionnelle</string>
+    <string name="trip_detail_purpose_hint">p. ex. visite client, rendez-vous médical</string>
+    <string name="trip_detail_category">Catégorie de trajet</string>
+    <string name="trip_detail_vehicle">Véhicule</string>
+    <string name="trip_detail_notes">Notes</string>
+    <string name="trip_detail_notes_hint">Notes optionnelles pour votre dossier ARC</string>
+    <string name="trip_detail_edit_locations">Modifier les lieux du trajet</string>
+    <string name="trip_detail_start_location">Lieu de départ</string>
+    <string name="trip_detail_end_location">Lieu d\'arrivée</string>
+    <string name="trip_detail_cra_eligible">Admissible à l\'ARC</string>
+    <string name="trip_detail_cra_not_eligible">Non admissible à l\'ARC</string>
+    <string name="trip_detail_reimbursement">Remboursement kilométrique</string>
+    <string name="trip_detail_save">Enregistrer le trajet</string>
+    <string name="trip_detail_delete">Supprimer le trajet</string>
+    <string name="trip_detail_delete_confirm_title">Supprimer ce trajet?</string>
+    <string name="trip_detail_delete_confirm_body">Ce trajet sera archivé et retiré de vos dossiers actifs. Cette action est irréversible.</string>
+    <string name="trip_detail_delete_confirm_yes">Supprimer</string>
+    <string name="trip_detail_delete_confirm_no">Annuler</string>
+    <string name="trip_detail_purpose_required_for_custom">Raison (requise pour les trajets personnalisés)</string>
+    <string name="trip_detail_repair">Corriger le trajet</string>
+    <string name="trip_detail_view_edit_history">Voir l’historique des modifications</string>
+    <string name="trip_detail_route_recorded">Itinéraire enregistré</string>
+    <plurals name="trip_detail_gps_points_captured">
+        <item quantity="one">%d point GPS capturé</item>
+        <item quantity="many">%d points GPS capturés</item>
+        <item quantity="other">%d points GPS capturés</item>
+    </plurals>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Manual Trip Entry
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="manual_trip_title">Saisir un trajet manqué</string>
+    <string name="manual_trip_repair_title">Corriger le trajet</string>
+    <string name="manual_trip_intro">Entrez les détails complets du trajet pour obtenir des rapports plus clairs et faciliter la révision par l’ARC.</string>
+    <string name="manual_trip_datetime_section">Date et heure</string>
+    <string name="manual_trip_datetime_subtitle">Indiquez l’heure de début et de fin pour une saisie prête pour audit.</string>
+    <string name="manual_trip_locations_section">Lieux</string>
+    <string name="manual_trip_locations_subtitle">Utilisez des adresses de départ et d’arrivée précises lorsque possible.</string>
+    <string name="manual_trip_date_label">Date du trajet</string>
+    <string name="manual_trip_start_label">Lieu de départ</string>
+    <string name="manual_trip_start_hint">Adresse ou nom du lieu</string>
+    <string name="manual_trip_end_label">Lieu d\'arrivée (destination)</string>
+    <string name="manual_trip_end_hint">Adresse ou nom du lieu</string>
+    <string name="manual_trip_distance_label">Distance (km)</string>
+    <string name="manual_trip_distance_hint">p. ex. 12,5</string>
+    <string name="manual_trip_purpose_label">Raison professionnelle</string>
+    <string name="manual_trip_purpose_hint">p. ex. réunion client, rendez-vous médical, livraison caritative</string>
+    <string name="manual_trip_category_label">Catégorie de trajet</string>
+    <string name="manual_trip_vehicle_label">Véhicule</string>
+    <string name="manual_trip_notes_label">Notes (optionnel)</string>
+    <string name="manual_trip_notes_hint">p. ex. nom du client, numéro de travail, raison ARC</string>
+    <string name="manual_trip_save">Enregistrer dans le registre</string>
+    <string name="manual_trip_save_repair">Enregistrer la correction</string>
+    <string name="manual_trip_saved_toast">Trajet enregistré dans votre registre de véhicule.</string>
+    <string name="manual_trip_repair_mode">Mode correction</string>
+    <string name="manual_trip_purpose_required_label">Raison (requise)</string>
+    <string name="manual_trip_distance_maps_calculated">Calculé à partir de l’itinéraire Google Maps</string>
+    <string name="manual_trip_not_set">Non défini</string>
+    <string name="manual_trip_timestamp_label">Horodatage %s</string>
+    <string name="manual_trip_select_date">Choisir la date</string>
+    <string name="manual_trip_select_time">Choisir l’heure</string>
+    <string name="manual_trip_select_time_title">Choisir l’heure %s</string>
+    <string name="manual_trip_date_value">Date : %s</string>
+    <string name="manual_trip_time_value">Heure : %s</string>
+    <string name="manual_trip_error_no_distance">Entrez la distance du trajet en kilomètres.</string>
+    <string name="manual_trip_error_no_vehicle">Sélectionnez le véhicule utilisé pour ce trajet.</string>
+    <string name="manual_trip_error_no_purpose">Entrez une raison professionnelle pour votre dossier ARC.</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Manual trip tracking control
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="tracking_control_title">Suivi de trajet</string>
+    <string name="tracking_control_start">Démarrer le suivi</string>
+    <string name="tracking_control_stop">Arrêter et enregistrer</string>
+    <string name="tracking_control_idle">Prêt à démarrer le suivi de votre trajet?</string>
+    <string name="tracking_control_paused">Trajet en pause</string>
+    <string name="tracking_control_in_progress">Trajet en cours…</string>
+    <string name="tracking_control_auto_in_progress">Suivi automatique en cours…</string>
+    <string name="tracking_control_auto_locked">Les commandes sont verrouillées pendant le suivi automatique.</string>
+    <string name="tracking_control_elapsed">Durée écoulée</string>
+    <string name="tracking_control_distance_so_far">Distance parcourue</string>
+    <string name="tracking_control_no_vehicle">Sélectionnez un véhicule avant de démarrer un trajet.</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Unclassified trips
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="unclassified_title">Classer les trajets</string>
+    <string name="unclassified_empty">Tous les trajets ont été classifiés. Excellent travail!</string>
+    <string name="unclassified_empty_title">Tout est à jour!</string>
+    <string name="unclassified_empty_body">Aucun trajet non classifié en attente. Faites glisser les nouveaux trajets pour les classer en Affaires ou Personnel.</string>
+    <string name="unclassified_error_title">Impossible de charger les déplacements</string>
+    <string name="unclassified_instruction">Sélectionnez une catégorie pour chaque trajet afin qu\'il soit inclus dans votre registre de véhicule ARC.</string>
+    <string name="unclassified_classify_all">Tout classer comme Affaires</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Reports
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="reports_title">Rapports</string>
+    <string name="reports_cra_logbook">Registre de véhicule ARC</string>
+    <string name="reports_cra_logbook_subtitle">Exporter un registre de véhicule PDF ou CSV aux fins de l\'ARC</string>
+    <string name="reports_annual_summary">Sommaire annuel du véhicule</string>
+    <string name="reports_annual_summary_subtitle">Pourcentage d\'utilisation aux fins d\'affaires et totaux kilométriques</string>
+    <string name="reports_history">Historique des exportations</string>
+    <string name="reports_history_subtitle">Registres et rapports générés précédemment</string>
+    <string name="reports_simplified_logbook">Registre simplifié</string>
+    <string name="reports_simplified_logbook_subtitle">Guide sur la méthode du registre de véhicule simplifié de l\'ARC</string>
+    <string name="reports_empty">Aucun rapport généré.
+Exportez votre premier registre de véhicule ARC depuis l\'écran du registre.</string>
+    <string name="reports_empty_title">Aucun sommaire disponible</string>
+    <string name="reports_empty_body">Essayez une autre année d\'imposition ou un autre filtre de véhicule, ou enregistrez d\'abord des trajets d\'affaires.</string>
+    <string name="reports_error_title">Impossible de charger les rapports</string>
+    <string name="export_screen_title">Exporter le registre</string>
+    <string name="export_screen_vehicle_scope_title">PortÃ©e du vÃ©hicule</string>
+    <string name="export_screen_categories_title">CatÃ©gories</string>
+    <string name="export_screen_route_details_note">Les exportations incluent par dÃ©faut les dÃ©tails d\'itinÃ©raire afin que le registre ARC reste prÃªt pour la vÃ©rification.</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         CRA Logbook
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="cra_logbook_title">Registre ARC</string>
+    <string name="cra_logbook_filter_all_vehicles">Tous les véhicules</string>
+    <string name="cra_logbook_filter_vehicle">Véhicule</string>
+    <string name="cra_logbook_filter_month">Mois</string>
+    <string name="cra_logbook_filter_all_months">Tous les mois</string>
+    <string name="cra_logbook_filter_business">Affaires</string>
+    <string name="cra_logbook_filter_medical">Médical</string>
+    <string name="cra_logbook_filter_charity">Bienfaisance</string>
+    <string name="cra_logbook_col_date">Date</string>
+    <string name="cra_logbook_col_destination">Destination</string>
+    <string name="cra_logbook_col_category">Catégorie</string>
+    <string name="cra_logbook_col_km">km</string>
+    <string name="cra_logbook_col_vehicle">Véhicule</string>
+    <string name="cra_logbook_eligible_km">km admissibles</string>
+    <string name="cra_logbook_total_km">km totaux</string>
+    <string name="cra_logbook_business_use">Utilisation affaires</string>
+    <string name="cra_logbook_empty_title">Aucun trajet trouvé</string>
+    <string name="cra_logbook_empty_body">Essayez une autre année d\'imposition, un autre véhicule ou un autre filtre de catégorie.</string>
+    <string name="cra_logbook_error_title">Impossible de charger le registre</string>
+    <string name="cra_logbook_error_body">Faites glisser vers le bas pour réessayer, ou vérifiez votre connexion.</string>
+    <string name="cra_logbook_export_pdf">Exporter PDF</string>
+    <string name="cra_logbook_export_csv">Exporter CSV</string>
+    <string name="cra_logbook_exporting">Exportation…</string>
+    <string name="cra_logbook_export_saved">%s enregistré dans l\'historique</string>
+    <string name="cra_logbook_view_history">Voir l\'historique</string>
+    <string name="cra_logbook_share_pdf_title">Partager le registre ARC (PDF)</string>
+    <string name="cra_logbook_share_csv_title">Partager le registre ARC (CSV)</string>
+    <string name="cra_logbook_generating_title">Génération du %s…</string>
+    <string name="cra_logbook_export_action">Générer %s</string>
+    <string name="cra_logbook_col_origin">Origine</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Annual Vehicle Summary
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="annual_summary_title">Sommaire annuel du véhicule</string>
+    <string name="annual_summary_tax_year">Année d\'imposition</string>
+    <string name="annual_summary_business_km">km d\'affaires</string>
+    <string name="annual_summary_personal_km">km personnels</string>
+    <string name="annual_summary_total_km">km totaux enregistrés</string>
+    <string name="annual_summary_business_pct">Pourcentage d\'utilisation aux fins d\'affaires</string>
+    <string name="annual_summary_reimbursement">Remboursement ARC</string>
+    <string name="annual_summary_opening_odometer">Kilométrage d\'ouverture</string>
+    <string name="annual_summary_closing_odometer">Kilométrage de clôture</string>
+    <string name="annual_summary_odometer_total">Total du compteur km</string>
+    <string name="annual_summary_cra_rate">Taux kilométrique</string>
+    <string name="annual_summary_no_data">Aucune donnée de véhicule pour cette année d\'imposition.
+Enregistrez des trajets d\'affaires pour voir votre sommaire annuel.</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Report History
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="report_history_title">Historique des exportations</string>
+    <string name="report_history_empty">Aucun registre exporté.
+Exportez un PDF ou CSV aux fins de l\'ARC depuis l\'écran du registre.</string>
+    <string name="report_history_empty_title">Aucune exportation</string>
+    <string name="report_history_empty_body">Les exportations générées depuis l\'écran du registre ARC apparaîtront ici.
+
+L\'ARC exige que les registres de véhicule soient conservés pendant au moins 6 ans après la fin de l\'année d\'imposition — cet écran constitue votre piste d\'audit.</string>
+    <string name="report_history_delete_confirm_title">Supprimer l\'exportation?</string>
+    <string name="report_history_delete_confirm_body">Cela supprimera l\'entrée de l\'historique. Le fichier peut toujours exister sur votre appareil.</string>
+    <string name="report_history_reshare">Partager à nouveau</string>
+    <string name="report_history_delete">Supprimer l\'entrée</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Report Readiness
+         ───────────────────────────────────────────────────────────────── -->
+    <plurals name="report_readiness_incomplete_title">
+        <item quantity="one">%d trajet nécessite votre attention</item>
+        <item quantity="many">%d trajets nécessitent votre attention</item>
+        <item quantity="other">%d trajets nécessitent votre attention</item>
+    </plurals>
+    <string name="report_readiness_incomplete_body">Certains trajets sont incomplets pour une soumission ARC complète. Appuyez sur «&amp;nbsp;Examiner les trajets&amp;nbsp;» pour les corriger avant de produire votre déclaration.</string>
+    <plurals name="report_readiness_progress_label">
+        <item quantity="one">%1$d trajet sur %2$d est prêt</item>
+        <item quantity="many">%1$d trajets sur %2$d sont prêts</item>
+        <item quantity="other">%1$d trajets sur %2$d sont prêts</item>
+    </plurals>
+    <string name="report_readiness_review_button">Examiner les trajets</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Exceptions List Screen
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="exceptions_list_title">Trajets incomplets</string>
+    <plurals name="exceptions_list_subtitle">
+        <item quantity="one">%d trajet manque de champs obligatoires pour l\'ARC. Appuyez sur la ligne pour le corriger.</item>
+        <item quantity="many">%d trajets manquent de champs obligatoires pour l\'ARC. Appuyez sur une ligne pour en corriger un.</item>
+        <item quantity="other">%d trajets manquent de champs obligatoires pour l\'ARC. Appuyez sur une ligne pour en corriger un.</item>
+    </plurals>
+    <string name="exceptions_list_empty_title">Tous les trajets sont prêts</string>
+    <string name="exceptions_list_empty_body">Chaque trajet de cette période contient les champs obligatoires de l\'ARC. Vous êtes prêt à exporter.</string>
+    <string name="exceptions_row_trip_id">Trajet #&amp;nbsp;%d</string>
+    <string name="exceptions_row_score">%d&amp;nbsp;%% prêt</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Missing field chip labels
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="missing_field_purpose">Aucune raison</string>
+    <string name="missing_field_vehicle">Aucun véhicule</string>
+    <string name="missing_field_category">Non classifié</string>
+    <string name="missing_field_distance">Aucune distance</string>
+    <string name="missing_field_attachment">Aucun reçu</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Simplified Logbook Guidance
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="simplified_logbook_title">Méthode du registre simplifié</string>
+    <string name="simplified_logbook_intro">L\'ARC vous permet d\'utiliser le registre complet d\'une année antérieure pour estimer l\'utilisation aux fins d\'affaires, à condition de tenir un registre échantillon sur une période de trois mois tous les cinq ans.</string>
+    <string name="simplified_logbook_eligible_label">Admissible à la méthode simplifiée</string>
+    <string name="simplified_logbook_not_eligible_label">Pas encore admissible</string>
+    <string name="simplified_logbook_requirement_full_year">Un registre de base complet de 12 mois doit exister.</string>
+    <string name="simplified_logbook_requirement_sample">Un registre échantillon de trois mois est requis tous les cinq ans.</string>
+    <string name="simplified_logbook_cra_reference">Consultez le guide T4002 de l\'ARC et IT-521R pour tous les détails sur la méthode du registre simplifié.</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Vehicles
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="vehicles_title">Mes véhicules</string>
+    <string name="vehicles_empty">Aucun véhicule ajouté.
+Ajoutez un véhicule à moteur pour commencer à suivre vos kilomètres d\'affaires.</string>
+    <string name="vehicles_empty_title">Aucun véhicule</string>
+    <string name="vehicles_empty_body">Ajoutez votre véhicule à moteur pour commencer à suivre vos kilomètres d\'affaires et générer un registre de véhicule ARC.</string>
+    <string name="vehicle_add">Ajouter un véhicule</string>
+    <string name="vehicle_edit">Modifier le véhicule</string>
+    <string name="vehicle_deactivate">Désactiver</string>
+    <string name="vehicle_reactivate">Réactiver</string>
+    <string name="vehicle_delete_confirm_title">Retirer le véhicule?</string>
+    <string name="vehicle_delete_confirm_body">Tous les trajets associés à ce véhicule seront conservés dans votre registre, mais le véhicule n\'apparaîtra plus dans les filtres ni pour les nouveaux trajets.</string>
+    <string name="vehicle_deactivate_confirm_title">Désactiver le véhicule?</string>
+    <string name="vehicle_deactivate_confirm_body">La désactivation de %1$s le masquera des listes actives. L\'historique des trajets est conservé.</string>
+    <string name="vehicle_delete_permanent_confirm_body">Êtes-vous sûr de vouloir supprimer définitivement %1$s? Cette action est irréversible.</string>
+    <string name="vehicle_form_display_name_label">Nom du véhicule</string>
+    <string name="vehicle_form_display_name_hint">p. ex. Ma Honda Civic 2021</string>
+    <string name="vehicle_form_ownership_type_label">Type de propriété</string>
+    <string name="vehicle_form_make_label">Marque</string>
+    <string name="vehicle_form_model_label">Modèle</string>
+    <string name="vehicle_form_year_label">Année</string>
+    <string name="vehicle_form_plate_label">Plaque d\'immatriculation</string>
+    <string name="vehicle_form_save">Enregistrer le véhicule</string>
+    <string name="vehicle_form_opening_odometer_hint">Lecture du compteur au 1er janvier</string>
+    <string name="vehicle_form_error_no_name">Entrez un nom pour ce véhicule.</string>
+    <string name="vehicle_status_active">Actif</string>
+    <string name="vehicle_status_inactive">Inactif</string>
+    <string name="vehicle_status_default">Par défaut</string>
+    <string name="vehicle_record_odometer">Enregistrer l\'odomètre</string>
+    <string name="vehicle_set_default">Définir par défaut</string>
+    <string name="vehicle_saved_snackbar">Véhicule enregistré avec succès</string>
+    <string name="vehicle_default_set_snackbar">Véhicule par défaut mis à jour</string>
+    <string name="vehicle_deactivated_snackbar">Véhicule désactivé</string>
+    <string name="vehicle_reactivated_snackbar">Véhicule réactivé</string>
+    <string name="vehicle_deleted_snackbar">Véhicule supprimé définitivement</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Odometer capture
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="odometer_title">Lecture du compteur kilométrique</string>
+    <string name="odometer_opening_label">Kilométrage d\'ouverture (km) — 1er janvier</string>
+    <string name="odometer_closing_label">Kilométrage de clôture (km) — 31 décembre</string>
+    <string name="odometer_hint">p. ex. 45000</string>
+    <string name="odometer_save">Enregistrer la lecture</string>
+    <string name="odometer_cra_note">L\'ARC exige les lectures d\'ouverture et de clôture du compteur kilométrique pour chaque année d\'imposition afin de calculer votre pourcentage d\'utilisation aux fins d\'affaires.</string>
+    <string name="odometer_error_invalid">Entrez une lecture valide en kilomètres.</string>
+    <string name="odometer_error_close_before_open">La lecture de clôture doit être supérieure à la lecture d\'ouverture.</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Tracking Diagnostics
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="diagnostics_title">Diagnostic de suivi</string>
+    <string name="diagnostics_location_permission">Permission de localisation</string>
+    <string name="diagnostics_location_granted">Accordée — le suivi des trajets est actif.</string>
+    <string name="diagnostics_location_denied">Refusée — MileageTracker ne peut pas détecter les trajets automatiquement.</string>
+    <string name="diagnostics_battery_optimisation">Optimisation de la batterie</string>
+    <string name="diagnostics_battery_unrestricted">Sans restriction — recommandé pour une détection fiable des trajets.</string>
+    <string name="diagnostics_battery_restricted">Restreinte — des trajets pourraient être manqués en arrière-plan.</string>
+    <string name="diagnostics_battery_warning_subtitle">L\'optimisation de la batterie peut interrompre le suivi en arrière-plan. Appuyez sur Corriger pour exempter cette application, ou sur Ignorer pour masquer cet avertissement.</string>
+    <string name="diagnostics_last_trip_detected">Dernier trajet détecté</string>
+    <string name="diagnostics_no_trip_detected">Aucun trajet détecté pour l\'instant.</string>
+    <string name="diagnostics_open_settings">Corriger</string>
+    <string name="diagnostics_cra_note">Une détection précise des trajets garantit que votre registre de véhicule est complet et conforme à l\'ARC. Des trajets manqués peuvent affecter votre calcul d\'utilisation aux fins d\'affaires.</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Settings screen
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_section_language">Langue de l\'application</string>
+    <string name="settings_language_change_hint">Le changement de langue prend effet immédiatement.</string>
+    <string name="settings_section_vehicle">Véhicule par défaut</string>
+    <string name="settings_vehicle_none">Aucun</string>
+    <string name="settings_vehicle_empty">Aucun véhicule actif — ajoutez-en un dans Mes véhicules.</string>
+    <string name="settings_vehicle_label">Véhicule par défaut</string>
+    <string name="settings_section_rate">Taux kilométrique</string>
+    <string name="settings_rate_label">Mode de taux</string>
+    <string name="settings_rate_cra">Taux ARC standard (deux paliers)</string>
+    <string name="settings_rate_custom">Taux forfaitaire personnalisé</string>
+    <string name="settings_rate_cra_description">Utilisation des taux kilométriques prescrits par l\'ARC (premiers 5 000 km au taux supérieur).</string>
+    <string name="settings_rate_region_label">Région de l\'allocation ARC</string>
+    <string name="settings_rate_region_required">Sélectionnez provinces ou territoires</string>
+    <string name="settings_rate_region_provinces">Provinces</string>
+    <string name="settings_rate_region_territories">Territoires (+0,04 $/km)</string>
+    <string name="settings_rate_cra_disclaimer">Estimation seulement. Ceci ne constitue pas un conseil fiscal.</string>
+    <string name="settings_rate_custom_label">Taux ($/km)</string>
+    <string name="settings_rate_custom_placeholder">p. ex. 0,70</string>
+    <string name="settings_rate_apply">Appliquer</string>
+    <string name="settings_section_notifications">Préférences de notification</string>
+    <string name="settings_notif_trip_label">Rappel de début de trajet</string>
+    <string name="settings_notif_trip_subtitle">Notifier lorsqu\'un nouveau trajet est détecté</string>
+    <string name="settings_notif_weekly_label">Résumé hebdomadaire</string>
+    <string name="settings_notif_weekly_subtitle">Recevoir un résumé hebdomadaire de vos kilomètres d\'affaires</string>
+    <string name="settings_notif_odometer_label">Rappels de photo d\'odomètre</string>
+    <string name="settings_notif_odometer_subtitle">Me rappeler en janvier lorsque des véhicules actifs nécessitent une preuve d\'odomètre d\'ouverture</string>
+    <string name="settings_section_tracking">Préférences de suivi</string>
+    <string name="settings_tracking_background_label">Detection des trajets en arriere-plan</string>
+    <string name="settings_tracking_background_subtitle">Optionnel. Le suivi manuel reste disponible si vous laissez ceci desactive.</string>
+    <string name="settings_tracking_background_status_on">La detection en arriere-plan est activee et enregistree.</string>
+    <string name="settings_tracking_background_status_pending">Accordez toutes les permissions requises pour activer la detection en arriere-plan.</string>
+    <string name="settings_tracking_background_status_off">La detection en arriere-plan est desactivee.</string>
+    <string name="settings_tracking_permission_required">Les permissions de localisation et de reconnaissance d activite sont requises. Apres les avoir accordees, ce bouton sera active automatiquement.</string>
+    <string name="settings_sensitivity_label">Sensibilité de détection automatique</string>
+    <string name="settings_sensitivity_low">Faible (moins de détections)</string>
+    <string name="settings_sensitivity_high">Élevée (plus de détections)</string>
+    <string name="settings_section_privacy">Confidentialité et sauvegarde infonuagique</string>
+    <string name="settings_cloud_upload_label">Sauvegarde infonuagique</string>
+    <string name="settings_cloud_upload_subtitle">Téléversez vos registres kilométriques et vos preuves dans votre compte privé afin de pouvoir les restaurer sur un autre appareil. Vous pouvez retirer ce consentement en tout temps.</string>
+    <string name="settings_section_classification">Classification automatique</string>
+    <string name="settings_calendar_permission_title">Acces au calendrier</string>
+    <string name="settings_calendar_permission_rationale">MileageTracker utilise l acces au calendrier uniquement pour la fonction facultative d indices de calendrier. L application verifie les evenements a proximite pour suggerer le motif d un trajet sans changer le reste de votre flux de travail.</string>
+    <string name="settings_calendar_permission_required">L acces au calendrier est requis avant que MileageTracker puisse suggerer le motif de vos trajets a partir de vos evenements.</string>
+    <string name="settings_calendar_permission_denied">L acces au calendrier est bloque. Ouvrez les parametres systeme si vous voulez des suggestions de motif basees sur les evenements.</string>
+    <string name="settings_rate_validation_title">Etat du catalogue des taux ARC</string>
+    <string name="settings_rate_validation_loading">Verification des taux ARC precharges...</string>
+    <string name="settings_rate_validation_catalog">Couverture du catalogue : %1$d-%2$d</string>
+    <string name="settings_rate_validation_seeded">Annees prechargees : %1$s</string>
+    <string name="settings_rate_validation_missing">Annees prechargees manquantes : %1$s</string>
+    <string name="settings_rate_validation_current_ready">L annee courante %1$d est prechargee et prete.</string>
+    <string name="settings_rate_validation_current_missing">L annee courante %1$d a encore besoin d une validation du taux ARC.</string>
+    <string name="settings_rate_validation_source">Ouvrir la source ARC</string>
+    <string name="privacy_dashboard_title">Tableau de bord de confidentialite</string>
+    <string name="privacy_dashboard_subtitle">Examinez les donnees locales, l etat de synchronisation et la securite de deconnexion</string>
+    <string name="privacy_dashboard_local_title">Donnees locales sur cet appareil</string>
+    <string name="privacy_dashboard_sync_title">Etat de la synchronisation</string>
+    <string name="privacy_dashboard_sign_out_title">Preparation a la deconnexion</string>
+    <string name="privacy_dashboard_footer">Les exportations restent disponibles depuis Rapports, et Supprimer le compte retire la copie infonuagique ainsi que le cache local de cet appareil.</string>
+    <string name="settings_classification_title">Règles de classification</string>
+    <string name="settings_classification_subtitle">Activer, désactiver et gérer les règles de classification automatique de vos trajets</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Language picker
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="language_system_default">Défaut du système</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Validation messages
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="validation_rate_empty">Entrez un taux kilométrique</string>
+    <string name="validation_rate_not_number">Doit être un nombre (p. ex. 0,70)</string>
+    <string name="validation_rate_zero">Le taux kilométrique doit être supérieur à 0</string>
+    <string name="validation_rate_too_high">Le taux semble trop élevé — entrez $/km (p. ex. 0,70)</string>
+    <string name="validation_postal_code_invalid">Entrez un code postal canadien valide (p. ex. A1A 1A1)</string>
+    <string name="validation_province_invalid">Sélectionnez une province ou un territoire canadien valide</string>
+    <string name="validation_distance_negative">La distance doit être un nombre positif de kilomètres</string>
+    <string name="validation_odometer_invalid">Entrez une lecture de compteur kilométrique valide</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Common / shared actions
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="action_save">Enregistrer</string>
+    <string name="action_cancel">Annuler</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="action_edit">Modifier</string>
+    <string name="action_share">Partager</string>
+    <string name="action_export">Exporter</string>
+    <string name="action_close">Fermer</string>
+    <string name="action_retry">Réessayer</string>
+    <string name="action_back">Retour</string>
+    <string name="action_next">Suivant</string>
+    <string name="action_done">Terminé</string>
+    <string name="action_dismiss">Ignorer</string>
+    <string name="action_ok">OK</string>
+    <string name="action_continue">Continuer</string>
+    <string name="action_open_menu">Ouvrir le menu</string>
+    <string name="action_more_options">Autres options</string>
+    <string name="action_add_trip">Ajouter un trajet</string>
+    <string name="action_add_vehicle">Ajouter un véhicule</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Generic error states
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="error_generic">Une erreur est survenue. Veuillez réessayer.</string>
+    <string name="error_no_vehicle">Aucun véhicule sélectionné. Ajoutez un véhicule dans Mes véhicules d\'abord.</string>
+    <string name="error_export_failed">Impossible de générer le registre. Veuillez réessayer.</string>
+    <string name="error_loading">Impossible de charger les données. Vérifiez votre connexion et réessayez.</string>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Classification rules
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="classification_rules_title">Règles de classification</string>
+    <string name="classification_rules_empty">Aucune règle configurée.
+Ajoutez une règle pour classer automatiquement les trajets en Affaires, Médical ou Bienfaisance.</string>
+    <string name="classification_rule_add">Ajouter une règle</string>
+    <string name="classification_rule_edit">Modifier la règle</string>
+    <string name="classification_rule_delete_confirm_title">Supprimer la règle?</string>
+    <string name="classification_rule_delete_confirm_body">Cette règle ne classifiera plus automatiquement les trajets correspondants.</string>
+    <string name="classification_rule_run_all">Reclassifier tous les trajets</string>
+    <plurals name="classification_rule_run_success">
+        <item quantity="one">%d trajet classifié.</item>
+        <item quantity="many">%d trajets classifiés.</item>
+        <item quantity="other">%d trajets classifiés.</item>
+    </plurals>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         Phase 5 — Route Map Visualisation (French localisation)
+         ───────────────────────────────────────────────────────────────── -->
+    <string name="map_screen_title_fallback">Carte de l\'itinéraire</string>
+    <string name="map_marker_start">Départ</string>
+    <string name="map_marker_end">Arrivée</string>
+    <string name="map_view_full">Voir la carte complète</string>
+    <string name="map_card_title">Carte de l\'itinéraire</string>
+    <string name="map_no_gps_data">Aucun itinéraire GPS disponible</string>
+    <string name="map_no_gps_data_hint">Ce trajet a été consigné manuellement et ne comporte aucune trace GPS enregistrée.</string>
+    <string name="map_unavailable">Google Maps n\'est pas disponible sur cet appareil.</string>
+    <string name="cd_navigate_back">Retour à l\'écran précédent</string>
+    <string name="audit_screen_title">Historique des modifications — Voyage #%1$d</string>
+    <string name="audit_screen_title_generic">Modifier l\'historique</string>
+    <plurals name="audit_timeline_subtitle">
+        <item quantity="one">%d événement enregistré</item>
+        <item quantity="many">%d événements enregistrés</item>
+        <item quantity="other">%d événements enregistrés</item>
+    </plurals>
+    <string name="audit_empty_title">Aucune modification enregistrée</string>
+    <string name="audit_empty_body">Ce voyage n\'a pas été modifié depuis sa création.</string>
+    <string name="audit_actor_system">Système (automatisé)</string>
+    <string name="audit_actor_user">Utilisateur : %1$s</string>
+    <string name="audit_field_label">Champ : %1$s</string>
+    <string name="audit_diff_old">%1$s</string>
+    <string name="audit_diff_new">%1$s</string>
+    <plurals name="exceptions_flagged_subtitle">
+        <item quantity="one">%d trajet signalé</item>
+        <item quantity="many">%d trajets signalés</item>
+        <item quantity="other">%d trajets signalés</item>
+    </plurals>
+
+    <string name="map_low_accuracy_warning">⚠ Précision GPS faible sur certaines parties de cet itinéraire</string>
+</resources>

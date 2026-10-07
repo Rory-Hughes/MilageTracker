@@ -1,0 +1,17 @@
+# Normalize line endings so the repo is identical on every platform.
+* text=auto eol=lf
+
+# Keep Gradle wrapper scripts executable
+gradlew text eol=lf
+*.bat text eol=crlf
+
+# Binary assets — never diff or line-ending convert
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.jks binary
+*.keystore binary
+*.pdf binary
